@@ -1,0 +1,15 @@
+/* primary color */
+$colors: (
+    primary: #005DFF,
+    primary-light: lighten(#005DFF, 40%),
+    primary-dark: darken(#005DFF, 40%),
+    accent: #FFF6BB
+);
+
+/* padding*/
+$padding: 15px; 
+$b-radius: 15px;
+
+@function color($color-name){
+    @return map-get($colors, $color-name);
+}
